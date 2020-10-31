@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+/*黄召冬 2020212748 */ /*by沫忆*/
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一次作业</title>
+    <style>
+        .my00 {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            /*my0和my00的是我抄的,我还没会弹出窗口的,不过我想做hh*/
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            /*设置属性的堆叠样式*/
+            -moz-opacity: 0.8;
+            /*透明样式*/
+            opacity: .80;
+            /*透明样式*/
+            filter: alpha(opacity=88);
+            /*设置背景的透明度*/
+        }
+        
+        .my0 {
+            display: none;
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            width: 600px;
+            height: 500px;
+            border: 0px;
+            padding: 0px;
+            border-radius: 5px;
+            background-color: #f3f3f3;
+            z-index: 1002;
+            overflow: auto;
+        }
+        
+        .my3 {
+            border: 3px;
+            outline: none;
+            margin-left: 140px;
+            height: 30px;
+            width: 320px;
+            border-radius: 5px;
+            border: solid #dbdbdb" 
+
+        }
+        
+        .my4 {
+            height: 25px;
+        }
+        
+        .my5 {
+            margin-top: 10px
+        }
+        
+        .my6 {
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>点点看撒<a href="javascript:void(0)" onclick="document.getElementById('my1').style.display='block';document.getElementById('my2').style.display='block'">请点这里</a></p>
+    <div id="my1" class="my0">
+        <img src="./img/QQ截图20201021112457.png" href="javascript:void(0)" onclick="document.getElementById('my1').style.display='none';document.getElementById('my2').style.display='none'" style="float:right;margin-top: 10px;">
+        </th>
+        <p style="background:#f3f3f3;font-size: larger;">&nbsp&nbsp&nbsp登录</p>
+        <hr>
+        <a style="font-size:medium;margin-left: 140px;font-weight:550;">手机号或Email</a>
+        <input type="text" style="border: 3px;
+        margin-top: 8px;
+        outline: none;
+        margin-left: 140px;
+        height: 30px;
+        width: 320px;
+        border-radius: 5px;
+        border: solid #dbdbdb" placeholder=" 11位手机号&nbsp或Email ">
+        <p></p>
+        <div class="my4">
+            <a style="font-size:medium;font-weight:550;margin-left: 140px;">密码</a>
+            <a href="https://segmentfault.com/user/forgot" style="line-height:15px;text-decoration: none;font-size:medium;color:#3cb78a;font-weight:540;margin-left: 225px;">忘记密码</a>
+        </div>
+        <input type="text" style="border: 3px;
+        margin-top: 8px;
+        outline: none;
+        margin-left: 140px;
+        height: 30px;
+        width: 320px;
+        border-radius: 5px;
+        border: solid #dbdbdb" ; margin-top:70px; placeholder=" 请输入密码">
+        <p></p>
+        <div class="my6">
+            <a href="https://segmentfault.com/user/phoneLogin" style="text-decoration: none;
+        font-size:medium;color:#3cb78a;
+        font-weight:540;
+        margin-left: 140px;">手机验证码登录</a>
+        </div>
+        <input type="submit" value="登录" style="margin-left: 140px;
+        border: 0;border-radius: 5px;
+        width: 328px; 
+        height: 30px; 
+        background-color:#009a61;
+        color: #ffffff;">
+        <p></p>
+        <a style="margin-left: 140px;
+        font-size:smaller;
+        color:#b3b3b3">————————更多登陆方式————————</a>
+        <div align="middle" style="margin-top: 10px;">
+            <img src="./img/QQ截图20201021141639.png" />
+        </div>
+        <input type="submit" value="注册新账号" style="margin-left: 140px;margin-top: 10px;
+        border: 0;
+        border-radius: 5px; 
+        width: 328px; 
+        height: 30px; 
+        background-color:white;
+        color: black;">
+        <div class="my5">
+            <a style="margin-left: 165px;font-size:smaller;color:black">继续即表示你同意</a><a href="https://segmentfault.com/tos" style="text-decoration: none;font-size:smaller;color:#009a61" target="_blank">《服务条款》</a><a style="font-size:smaller;color:black">和</a>
+            <a href="https://segmentfault.com/privacy" style="text-decoration: none;font-size:smaller;color:#009a61" target="_blank">《隐私政策》</a>
+        </div>
+    </div>
+    <div id="my2" class="my00">
+    </div>
+</body>
+
+</html>
