@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: red
+    }
+    
+    .my0 {
+        background: #584cc0;
+        top: 300px;
+        left: 580px;
+        height: 300px;
+        text-align: center;
+    }
+    
+    .my4 {
+        font-weight: 800;
+        font-size: larger;
+    }
+</style>
+
+<body id="my7">
+    <div class="my0">
+        <p id="my10" class="my4">我是个色图</p>
+        <button onclick="my1()" style="width: 150px;height: 130px;border-radius: 10px;border: none;">启动主题色改变!!</button>
+        <button onclick="my2()" style="width: 150px;height: 130px;border-radius: 10px;border: none;">启动字体改变!!</button>
+    </div>
+</body>
+<script>
+    function my1() {
+        my7.style.background = "black";
+    }
+    var a = 1
+    var arr = [10, 20, 30]
+
+    function my2() {
+        if (a == 1) {
+            my10.style.fontSize = arr[0] + "px"
+            a = 2
+        } else {
+            if (a == 2) {
+                my10.style.fontSize = arr[1] + "px"
+                a = 3
+            } else {
+                if (a == 3) {
+                    my10.style.fontSize = arr[2] + "px"
+                    a = 1
+                } else {
+                    return 0
+                }
+            }
+        }
+    }
+</script>
+
+</html>

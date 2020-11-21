@@ -6,9 +6,7 @@ const person = {
         area: 'Nanan'
     }
 }
-let { city, area } = person.address;
-
-let { name, age } = person;
+let { name, age, address: { city, area } } = person
 
 console.log(name, age, city, area)
     // 通过解构赋值的方式获取对象中所有属性
