@@ -31,6 +31,7 @@
 }
 
 .nav {
+    margin: 0;
     height: 34px;
     background: #C20C0C;
 }
@@ -92,7 +93,7 @@
 }
 
 .my {
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 60%;
     width: 680px;
     height: 420px;
     display: flex;
@@ -105,6 +106,7 @@
 .my1 {
     position: absolute;
     margin-right: 300px;
+    margin-left: 75px;
 }
 
 .my2 {
@@ -122,7 +124,49 @@
 .banner {
     margin: 0;
     padding: 0;
-    margin-left: 26%;
+    margin-left: 24%;
     width: 730px;
     height: 284px;
+}
+
+.dots {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 12.5%;
+    z-index: 99;
+    width: 730px;
+    height: 20px;
+}
+
+.pg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(img/dot.png)no-repeat;
+}
+
+.pg0 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(img/dot_slt.png)no-repeat;
+}
+
+.swiper-item banner {
+    margin-left: 26%;
+    position: absolute;
+}
+
+.swiper-wrapper {
+    overflow: auto;
+    display: inline-block;
+    width: 730px;
+    height: 284px;
+    border: 0px;
+    overflow: hidden;
+}
+
+.swiper-wrapper-box {
+    margin-left: 0;
+    list-style: none;
 }
